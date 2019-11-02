@@ -9,8 +9,9 @@ class Anagram
   end 
   
   def match(possible_anagrams)
-    possible_anagrams.detect do |word_match|
-      word_match.sort
+    sorted_words = []
+    possible_anagrams.select do |word_match|
+      word_match.sort << sorted_words
     end 
   end 
   
