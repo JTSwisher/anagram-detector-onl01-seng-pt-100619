@@ -5,12 +5,12 @@ class Anagram
   
   
   def initialize(word)
-    @@word = word 
+    @word = word 
   end 
   
   def match(possible_anagrams)
-    possible_anagrams.split do |word|
-      word.sort == @@word 
+    possible_anagrams.split do |word_match|
+      word_match.sort ==  word.sort
   end 
   
   
